@@ -1,0 +1,440 @@
+body{
+    margin: 0% 1.5% 0% 1.5%;
+}
+
+/*TOP BANNER START*/        
+        #top-banner {
+            width: 100%;
+            height: 3.5vh;
+            overflow: hidden;         
+            background-color: #8CCAF6;
+        }
+
+        #top-banner-text {
+            display: inline-block;     
+            white-space: nowrap;       
+            
+            animation: scroll 20s linear infinite;
+            
+            color: white;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        #top-banner-text span {
+            margin-inline: 15vw;       
+        }
+
+        /* Animation that moves it */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+/*TOP BANNER END*/
+
+/*HEADER IMAGE/ICON START*/
+
+        #header-image {
+            position: relative;
+
+            max-width: 100%;
+            height: 30vh;
+            margin-top: 1vh;  
+
+            background-image: url("Images/Header-image.jpg");
+            background-size: cover;
+        }
+
+        #eloria-icon{
+            position:absolute; 
+            top: 50%;                 
+            left: 50%;                
+            transform: translate(-50%, -50%); 
+            text-align: center;
+
+        }
+
+        #eloria-icon img{
+            height: 20vh;
+            width: 30vh;
+        }
+
+/*HEADER IMAGE/ICON END*/
+
+
+/*HEADER MAIN MENU START*/
+
+        #header-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 0;
+        position: relative;
+        }
+
+        .menu-button {
+        position: relative;
+
+        background-color: cornsilk;
+        cursor: pointer;
+        }
+
+        .dropdownbtn,
+        .searchbtn {
+        background-color: white;
+        
+        border: none;
+        padding: 6px 14px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.2s ease;
+        }
+
+        .dropdownbtn:hover,
+        .searchbtn:hover {
+        color: #0066B0;
+        text-decoration: underline;
+        }
+
+        .dropdown-content {
+        position: absolute;
+        
+        display: none;
+        background-color: white;
+        border: 1px solid #0066B0;
+        border-radius: 8px;
+        
+        padding: 20px;
+        z-index: 10;
+        }
+
+        .menu-button:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown-columns {
+        display: flex;
+        gap: 40px;
+        }
+
+        .dropdown-columns h5 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        }
+
+        .dropdown-columns ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+
+        .dropdown-columns li {
+        margin: 4px 0;
+        font-size: 0.8rem;
+        }
+
+        .dropdown-columns a {
+        text-decoration: none;
+        color: black;
+        }
+
+        .dropdown-columns a:hover {
+        color: #0066B0;
+        text-decoration: underline;
+        }
+
+        .dropdown-content ul {
+        padding: 0;
+        margin: 0;
+        }
+
+        .dropdown-content li {
+        margin: 5px 0;
+        font-size: 0.8rem;
+        }
+
+        .dropdown-content a {
+        color: black;
+        }
+
+        .dropdown-content a:hover {
+        color: #8CCAF6;
+        text-decoration: underline;
+        }
+
+        .search-button {
+        display: flex;
+        
+        align-items: center;
+        cursor: pointer;
+        gap: 0.5rem;
+        }
+
+        .search-button input {
+        display: block;
+        padding: 6px 10px;
+        border: 1px solid #8CCAF6;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        }
+
+
+
+/*HEADER MAIN MENU END*/
+
+
+/*CATEGORIES SECTION START*/
+
+        #lower-header-banner{
+            text-align: center;
+
+            padding-bottom: 0.5vh;
+            margin-bottom: 2vh;
+            background-color: #8CCAF6;
+        }
+        #lower-header-banner h3{                    
+            margin-bottom: 0;
+        }
+        #lower-header-banner h4 {
+            margin-top: 0;
+        }
+
+        #categories-panel {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: white;
+            padding: 1rem 0;
+        }
+
+        .categories-button {
+            width: 7em;
+            background-color: #8CCAF6;
+            border: 2px solid #0066B0;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .categories-button:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+
+ /*CATEGORIES SECTION END*/
+
+ /*CAROUSEL SECTION START*/
+
+        .panel-dark {
+            width: 100%;
+            background-color: #0066B0;
+            margin-top: 1em;
+            height: 2em;
+        }
+
+        .panel-light {
+            background-color: aliceblue;
+        }
+
+       #heading-carousel {
+            text-align: center;
+        }
+
+        #Product-carousel {
+            background-color: aliceblue;
+            padding-bottom: 1.5rem;
+        }
+
+        #Carousel-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        }
+
+        #Carousel-box {
+        display: flex;
+        width: 65%;
+        overflow: hidden; 
+
+        gap: 2rem;
+
+        background-color:aliceblue;
+        }
+
+        #Carousel-box img {
+            flex: 0 0 calc(25% - 1.5rem);       /*Från denna bok https://files.addictbooks.com/wp-content/uploads/2024/04/Learning-Web-Design-5th-Edition.pdf
+                                                Rubrik " Determining How Items “Flex” in the Container" sida. 456
+                                                flex-grow = 0
+                                                flex-shrink = 0
+                                                flex basis = 25% --> varje bild, dvs en img tar 25% av hela carousel-box MEN räkna bort the gap mellan varje bild (rad267)*/
+            width: 100%;           
+            object-fit: contain;
+        }
+
+        .carousel-arrow img{
+            width: 80%;
+        }
+
+        #next {
+            margin-right: 8%;
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+        #prev {
+            margin-left: 8%;
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+
+/*CAROUSEL SECTION END*/
+
+
+        .menu-container {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+        }
+
+/*FILTER VERTICAL MENU START*/
+        #filtering-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 120px;
+            padding-top: 17%;
+        }
+        #filtering-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+        #filtering-menu li {
+            margin-bottom: 15%;
+            text-align: center;
+            cursor: pointer;
+        }
+        #filtering-menu li:hover{
+            border: 1px solid #0066B0;
+            border-radius: 45%;
+        }
+
+        summary{
+            margin-bottom: 20%;
+            list-style-type: none;
+            border-bottom: 1px solid #0066B0;
+            cursor: pointer;
+        }
+/*FILTER VERTICAL MENU END*/
+
+/*POPULAR CATEGORIES MENU START*/
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            border: 1px solid #0066B0;
+        
+        }
+
+/* POPULAR CATEGORIES MENU START */
+    #popular-categories-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-inline: 10%;
+        padding-top: 5%;
+
+    }
+    #categories-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #categories-h4 img{
+        vertical-align: middle;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+    }
+
+    .lower-categories-button {
+        background: white;
+        color: #0066B0;
+     
+        border: 1px solid #0066B0;           
+        padding: 5px 10px;      
+        cursor: pointer;                  
+    }
+    .lower-categories-button.clicked {
+        background: #8CCAF6;
+        color: black;
+    }   
+
+
+
+    /* Products Grid */
+    .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 7%;
+    height: 600px;
+    overflow: scroll;
+    }
+
+    #Scrollableproducts {
+        display: flex;
+        flex-wrap: wrap; 
+        overflow-y: scroll;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 0 0 200px; /*Every card takes up 200px*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+/*POPULAR CATEGORIES MENU END*/
+
+
+
+
+/*Fixed to small desktopscreens*/
+@media (max-width: 100px){
+
+}
+
+/*Responsive to mobile phones*/
+@media (min-width: 100px) and (max-width: 480px){
+
+}
+
+/*Responsive to tabletscreens*/
+@media (min-width: 480px) and (max-width: 1024px){
+
+}
+
+/*Responsive to desktopscreens*/
+@media (min-width: 1024px) and (max-width: 1200px){
+
+}
+
+
+/*Fixed to large desktopscreens */
+@media (min-width: 1200px){
+
+}
