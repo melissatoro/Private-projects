@@ -1,7 +1,7 @@
 This is my Shopping website and a current project i am  working on that is currently "under construction"
 
 To enter the current website follow these steps:
-1. Download the "ShoppingWebsite" folder
+1. Download the "Shopping Website" folder
     
 2. Click on the file HTML file named "Homepage"
 
