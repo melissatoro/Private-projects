@@ -85,7 +85,7 @@ const products = [
 
 const cardData = Array(10).fill(products).flat(); 
 
-const container = document.getElementById("Scrollableproducts");
+const container = document.getElementById("scrollableproducts");
 
 cardData.forEach(card => {
   const div = document.createElement("div");
