@@ -159,7 +159,7 @@
                 
                 <div id="Carousel-panel">
                     <div class="carousel-arrow" id="prev">
-                        <img src="Images/chevron-left-solid.svg" alt="Left arrow">     <!--FLYTTA WIDTH TILL CSS-->
+                        <img src="Images/chevron-left-solid.svg" alt="Left arrow">   
                     </div>
 
                     <div id="Carousel-box"></div>
@@ -254,26 +254,66 @@
 
             </section>
 
-            <footer> <!-- två spalter:
-                Spalt 1 på vänster sida (hela spalten med bakgrundsfärg):
-                        a. Rubriken "Första köpet? Vi ger dig 30% på dyraste* varan.
-                        b. (i mindre text) "Nyheter varje vecka, exklusiva erbjudanden och en stor dos stilinspiration – direkt till dig." 
-                        c. Knapp med färg och vit text ovanpå "Bli kund"
-                        d. (i ännu mindre text) "* Se erbjudandevillkor vid registrering"
+            <footer>
+                
+                <section>
+                    <div id="campaign-and-membership">
+                        <h3>First purchase? get 30% on the most expensive* product</h3>
+                        <h4>News every week, exclusive deals and customized recommendations!</h4>
+                        
+                        <form action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="post"></form>
+                            <fieldset>
+                                <legend>Sign up now!</legend>
+                                
+                                <label for="firstname">First name: 
+                                    <input type="text" id="firstName" name="firstname" required="required" pattern="^[A-Za-zÀ-ÿ]+$" title="First name should only contain letters"/>
+                                </label>
 
-                Spalt 2 på höger sida (hela spalten med bakgrundsfärg): 
-                        a. Rubriken "Behöver du hjälp?"
-                        b. (i mindre text) "I vår FAQ hittar du svaren på de vanligaste frågorna. Här finns också information om hur du enklast kontaktar oss."
-                        c. Knappar i rad:
-                            c1. Kundservice
-                            c2. Beställning
-                            c3. Betalsätt 
-                            c4. Leveranser
-                            c5. Rabatter
-                            c6. Returer
+                                <label for="lastname">Last name: 
+                                    <input type="text" id="lastName" name="lastname" required="required" pattern="^[A-Za-zÀ-ÿ]+$" title="Last name should only contain letters"/>
+                                </label>
 
-                        Knapparnas utseende: grå kant och vit text, vid hoovering blir kanten vit
-                -->
+                                <label for="email">Email:
+                                    <input type="text" id="email" name="email" required="required" title="Enter a valid email adress (e.g example@email.com)" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+                                </label>
+
+                                <label for="checkbox">Prefered choice of communication: 
+                                    <input type="checkbox" name="email" value="via-email" checked="checked"> Email
+                                    <input type="checkbox" name="email" value="via-textmessage" checked="unchecked"> Textmessage
+                                </label>
+
+                                <label for="telephone">Telephone: <br>
+                                    <input type="text" id="telephone" name="telephone" title="Enter a number with a country code" pattern="^\+\d{1,3}\s?\d{4,14}$"/>
+                                </label>
+
+                                <input type="submit" name="submit-button" value="Submit">
+
+                            </fieldset>
+
+                            <h5>*See terms of deal upon registration</h5>
+                    </div>
+
+                </section>
+
+                <section id="help-section">
+                        <h3>Do you need help?</h3>
+                        <h4>In our FAQ, you will find answers to the most common questions. <br> You will also find information on the easiest way to contact us.</h4>
+
+                        <div id="help-section-buttons">
+                            <button>Customer service</button>
+                            <button>Orders</button>
+                            <button>Payment methods</button>
+                            <button>Deliveries</button>
+                            <button>Returns</button>
+                        </div>
+                    </section>
+
+            <pre>
+ *****************************************************
+ *           Website by Melissa Torosian            *
+ *                Welcome back soon!                *
+ *****************************************************
+</pre>
 
             </footer>
 
