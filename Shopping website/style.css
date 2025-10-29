@@ -515,7 +515,10 @@ h5,summary,li,ul{
        color:#0066B0;
     }
 
-
+ footer pre{
+        display: block;
+        width: 100%;
+    }
     
 /*FOOTER END*/
 
@@ -528,3 +531,4 @@ h5,summary,li,ul{
     font-weight: normal;
     font-style: normal;
 }
+
